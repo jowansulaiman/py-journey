@@ -1,0 +1,25 @@
+# Clemens Geick
+
+1.  Was ist der Hauptunterschied zwischen dem Lesemodus "r" und dem Anhängemodus "a"
+    beim Öffnen einer Datei in Python?
+
+    Im Modus "r" könne nur Daten ausgelesen werden, 
+    während man im Modus "a" Daten ans Ende einer Datei hinzufügt(schreibt)
+    Zusätzlich sitzt der Cursor bei "r" zu Beginn am Anfang der Datei, während er bei "a" sich am Ende befindet.
+
+2.  Warum ist die Verwendung des with-Blocks beim Arbeiten mit Dateien eine empfohlene
+    Praxis? Nennen Sie zwei Vorteile.
+
+    Der größte Vorteil ist das beim with-Block die geöffnete Datei, selbst bei auftretenden Fehlern,
+    automatisch geschlossen wird. (close() wir nicht benötigt)
+    Zusätzlich sieht der code natürlich auch übersichtlicher aus (und wird ein bisschen kürzer).
+
+3.  Erklären Sie den Unterschied zwischen den Funktionen json.dump() und json.dumps().
+    In welchem Anwendungsfall würden Sie die jeweilige Funktion verwenden?
+
+    json.dump() nimmt ein Python-Objekt (Liste, Dictionary, etc.) wandelt diesen in einen Json-String um
+    und schreibt diesen dann in eine .json Datei.
+    json.dumps() nimmt auch ein Python-Objekt, wandelt diesen ebenfalls in einen Json-String um
+    und, im Unterschied zu json.dump(), gibt dann den erschaffend Json-String als Return zurück.
+
+
