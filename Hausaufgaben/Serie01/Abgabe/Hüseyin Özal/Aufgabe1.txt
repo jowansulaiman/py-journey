@@ -1,0 +1,6 @@
+1. Der Lesemodus "r" wird nur zum lesen benutzt, man kann also nicht schreiben. Der Anhängemodus erlaubt es weiteren Text an den bereits bestehenden Text anzuhängen.
+
+2.Weil die Datei automatisch nach Abschluss geschlossen wird und der Code lesbarer/sauberer ist.
+
+3. Dumps gibt einen string zurück. Dump schreibt zum Beispiel den Python-Code direkt in eine Json Datei.
+Dumps wenn die Datei weiterverwendet werden soll und Dump wenn nur gespeichert werden soll.
