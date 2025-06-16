@@ -6,8 +6,14 @@
 
 1.2: Eine Datei mit der Zeile "with open("meinedatei.txt", "r") as f: zu öffnen hat den großen Vorteil, dass die 
 	Datei nach dem Schreiben nicht wieder per Befehl geschlossen werden muss, da with open dies automatisch tut.
+	Man kann auch nicht vergessen, die geöffnete Datei zu schließen
+	Für die optische Klarheit: with open erzwingt eine Einrückung, die es deutlich machen, was darunter fällt.
 
-1.3: Bei einer sehr großen Datei lohnt es sich, den Inhalt Zeile für Zeile aus zu lesen, da sich so auch stets 
+1.3: json.dump() schreibt den aktuellen Inhalt der Datei in eine .json Datei, während json.dumps den aktuellen
+	String nur an den Code zurück gibt.
+	Beide befehle konvertieren von python zu json.
+
+1.x: Bei einer sehr großen Datei lohnt es sich, den Inhalt Zeile für Zeile aus zu lesen, da sich so auch stets 
 	nur die eine Zeile im Speicher befindet, was den Speicher spart.
 	Außerdem kann man auf diesem Wege leichter Operationen umsetzen, die mehrfach vorkommen sollen.
 	i.e.: 	with open ("Datei.txt", "r") as f:
@@ -15,6 +21,6 @@
 				i += 1
 				print(i, " mal x in Datei.txt gefunden!")
 
-1.4: Der Befehl "shutil.rmtree()", der es einem erlaubt ganze Ordnerstrukturen innerhalb eines Python-Codes zu 
+1.x: Der Befehl "shutil.rmtree()", der es einem erlaubt ganze Ordnerstrukturen innerhalb eines Python-Codes zu 
 	löschen ist nur mit dem importieren des os-Modules verfügbar.
 				
