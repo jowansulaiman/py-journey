@@ -1,0 +1,25 @@
+1. Was ist der Hauptunterschied zwischen dem Lesemodus "r" und dem Anh¨angemodus ¨a"
+beim Offnen einer Datei in Python?
+
+Antwort: 
+r = Read = liest eine Datei; gibt Fehler wenn es nicht existiert 
+a = Append = Fügt Daten hinzu; Erstellt eine Datei wenn nicht existiert.
+
+2. Warum ist die Verwendung des with-Blocks beim Arbeiten mit Dateien eine empfohlene
+Praxis? Nennen Sie zwei Vorteile.
+
+Antwort:
+Hauptvorteil ist: Die geöffnete Datei wird automatisch geschlossen.
+(Man braucht nicht die geöffnete Datei nach dem Bearbeiten selber schließen)
+Des weiteren ist der Code übersichtlicher zu lesen. 
+
+3. Erklären Sie den Unterschied zwischen den Funktionen json.dump() und json.dumps().
+Antwort:
+## json.dump()
+	Python-Objekte werden als JSON-Format umgewandelt und in eine JSON-Datei abgespeichert
+
+## json.dumps()
+	Python-Objekte werden als JSON-Format umgewandelt und in eine JSON-Datei abgespeichert und
+	gibt den String als RETURN wieder zurück.
+
+
