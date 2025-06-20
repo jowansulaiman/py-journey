@@ -11,8 +11,7 @@ Dateizeiger wird an den Anfang der Datei gesetzt.
 
 Dateiöffnungsmodus „a“: „a“ steht für „append“ also anhängen. Der Dateizeiger wird am Ende der
 Datei positioniert. Wenn es schon Inhalt in der Datei gibt, wird der neue Text ans Ende von diesem
-schon bestehenden Inhalt angehängt. Wenn die Datei noch nicht existiert, wird diese erstellt. In
-diesem Modus kann man also schreiben. In dem Modus kann man sowohl lesen als auch schreiben.
+schon bestehenden Inhalt angehängt. Wenn die Datei noch nicht existiert, wird diese erstellt. 
 
 
 2. Warum ist die Verwendung des with-Blocks beim Arbeiten mit Dateien eine empfohlene
