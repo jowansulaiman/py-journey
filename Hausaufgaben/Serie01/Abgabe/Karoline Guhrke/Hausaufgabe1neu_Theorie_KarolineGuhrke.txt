@@ -1,0 +1,44 @@
+
+Python Hausaufgabe 1 neu;  Karoline Guhrke
+
+
+1. Was ist der Hauptunterschied zwischen dem Lesemodus "r" und dem Anhängemodus „a"
+beim Öffnen einer Datei in Python?
+
+Dateiöffnungsmodus „r": „r“ steht für „read“ also lesen. In dem Modus kann man nur lesen,
+schreiben ist nicht erlaubt. Es gibt eine Fehlermeldung, falls die Datei nicht existiert. Der
+Dateizeiger wird an den Anfang der Datei gesetzt.
+
+Dateiöffnungsmodus „a“: „a“ steht für „append“ also anhängen. Der Dateizeiger wird am Ende der
+Datei positioniert. Wenn es schon Inhalt in der Datei gibt, wird der neue Text ans Ende von diesem
+schon bestehenden Inhalt angehängt. Wenn die Datei noch nicht existiert, wird diese erstellt. 
+
+
+2. Warum ist die Verwendung des with-Blocks beim Arbeiten mit Dateien eine empfohlene
+Praxis? Nennen Sie zwei Vorteile.
+
+1. Vorteil: Man muss nicht darauf achten bzw. sich nicht darum kümmern, die Datei nachher wieder
+zu (manuell) zu schließen, es wird durch diese Methode automatisch gemacht. Sobald der Code-
+Block, der die Datei verwendet, verlassen wird, wird die Datei geschlossen. Dies geschieht
+unabhängig davon, ob ein Fehler oder ein normaler Programmabschluss auftritt.
+2. Vorteil: Der Programmiercode wird durch die Verwendung des with-Blocks sauberer, kürzer,
+übersichtlicher, besser strukturiert, leichter lesbar und leichter verständlich.
+
+
+
+3. Erklären Sie den Unterschied zwischen den Funktionen json.dump() und json.dumps(). In
+welchem Anwendungsfall würden Sie die jeweilige Funktion verwenden?
+
+Die Funktion json.dumps() wandelt ein Python-Objekt (dictionary, list, string, integer, float, boolean
+oder None) in einen JSON-formatierten String um. Somit könnte sie verwendet werden um Daten
+für die Speicherung in einer Datenbank, für die Übertragung über das Netzwerk oder für die
+Ausgabe in einer Textdatei zu serialisieren. Es könnte auch dort verwendet werden, wo Daten
+zwischen verschiedenen Systemen oder Anwendungen übertragen werden (, die auch das Format
+lesen können), z.B. in der Webentwicklung, bei Web-APIs.
+
+Die Funktion json.dump() wandelt ein Python-Objekt in eine JSON-formatierte Form um und
+schreibt die serialisierten Daten direkt in eine Datei. Die Funktion benötigt zwei Argumente: Einmal
+das Python-Objekt, und das Dateiobjekt, in das geschrieben werden soll.
+Die json-dump() würde ich verwenden, wenn die JSON-Daten in eine Datei geschrieben werden
+sollen, z.B. wenn ich sie längerfristig in einer Form speichern möchte, die auch von anderen
+Systemen oder Anwendungen gelesen werden kann.
